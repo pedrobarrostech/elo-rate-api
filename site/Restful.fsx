@@ -23,7 +23,6 @@ module Restful =
         >>= Writers.setMimeType "application/json; charset=utf-8"
 
 
-
     let fromJson<'a> json = JsonConvert.DeserializeObject(json, typeof<'a>) :?> 'a
 
 
